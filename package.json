@@ -1,6 +1,8 @@
 {
   "name": "pkl2csv",
+  "publisher": "Merlin",
   "displayName": "pkl2csv",
+  "repository": "https://github.com/liomen/pkl2csv",
   "description": "convert pkl file to csv",
   "version": "0.0.1",
   "engines": {
