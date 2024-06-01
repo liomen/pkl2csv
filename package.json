@@ -1,0 +1,46 @@
+{
+  "name": "pkl2csv",
+  "displayName": "pkl2csv",
+  "description": "convert pkl file to csv",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.convertToCsv",
+          "group": "0_convert",
+          "when": "resourceExtname == .pkl",
+          "target": "viewItem"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.convertToCsv",
+        "title": "Convert to CSV"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
