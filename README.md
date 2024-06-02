@@ -11,7 +11,7 @@ An extension to convert from .pkl file to .csv file.
 - python3
 - pandas
 - pyarrow
-
+- vscode version >= 1.89.0
 
 ## Known Issues
 
