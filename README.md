@@ -13,9 +13,15 @@ An extension to convert from .pkl file to .csv file.
 - pyarrow
 - vscode version >= 1.89.0
 
+For Archlinux
+
+```
+pacman -S python python-pandas python-pyarrow
+```
+
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No notification when the extension not work correct for now, please see error log in vscode developer console
 
 ## Release Notes
 
